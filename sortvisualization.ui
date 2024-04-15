@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SortVisualization</class>
+ <widget class="QWidget" name="SortVisualization">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1418</width>
+    <height>785</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Демонстрация сортировок</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>sortvislogo.ico</normaloff>sortvislogo.ico</iconset>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>1391</width>
+     <height>775</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="minimumSize">
+       <size>
+        <width>1029</width>
+        <height>773</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1029</width>
+        <height>773</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="animationGroupBox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>180</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>180</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Анимация</string>
+        </property>
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>30</y>
+           <width>350</width>
+           <height>147</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="speedLabel">
+              <property name="text">
+               <string>Скорость:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="speedSlider">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>10</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="cmpLabel">
+              <property name="text">
+               <string>Сравнений:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="cmpCount">
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="accessLabel">
+              <property name="text">
+               <string>Обращений к массиву:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="accessCount">
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="swapLabel">
+              <property name="text">
+               <string>Количество изменений:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="swapCount">
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="runButton">
+              <property name="text">
+               <string>Запуск</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pauseButton">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Пауза</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="sortGroupBox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Массив и сортировка</string>
+        </property>
+        <widget class="QWidget" name="verticalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>331</width>
+           <height>271</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="typeLabel">
+            <property name="text">
+             <string>Тип массива:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="typeComboBox">
+            <item>
+             <property name="text">
+              <string>Случайное перемешивание</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Возрастающий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Убывающий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="sizeLabel">
+            <property name="text">
+             <string>Размер массива:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QSlider" name="sizeSlider">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>1024</number>
+              </property>
+              <property name="value">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="sizeSpinBox">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>1024</number>
+              </property>
+              <property name="value">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="sortingLabel">
+            <property name="text">
+             <string>Сортировка:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="sortingsListWidget">
+            <item>
+             <property name="text">
+              <string>Пузырьковая сортировка</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Шейкерная сортировка</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка вставками</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка выбором</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка подсчётом</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка двоичными вставками</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Двусторонняя сортировка выбором</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка деревом</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка слиянием</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Пирамидальная сортировка</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Быстрая сортировка</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка Шелла</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка Шелла (последовательность Хиббарда)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка Шелла (последовательность Пратта)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка Шелла (последовательность Седжвика)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Сортировка Шелла (последовательность Фибоначчи)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Битонная сортировка</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>custom</class>
+ <widget class="QDialog" name="custom">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>297</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Сортировка последовательности</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>e5da578c907f5b2d6f242cdf3f2d3c5a.ico</normaloff>e5da578c907f5b2d6f242cdf3f2d3c5a.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>831</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Выберите путь к файлу:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="lineEdit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="openButton">
+            <property name="text">
+             <string>Открыть</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Метод сортировки:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox">
+          <item>
+           <property name="text">
+            <string>Сортировка пузырьком</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Шейкерная сортировка</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка вставками</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка выбором</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка подсчётом</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка двоичными вставками</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Двусторонняя сортировка выбором</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка с помощью выбора из дерева</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка слиянием</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Быстрая сортировка</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка Шелла</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка Шелла (последовательность Пратта)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка Шелла (последовательность Седжвика</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка Шелла (последовательность Хиббарда)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Сортировка Шелла (последовательность Фибоначчи)</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="warningLabel">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 0, 0);
+</string>
+      </property>
+      <property name="text">
+       <string>Не удалось открыть файл по указаному пути (попробуйте выбрать ещё раз)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Массив в текстовом файле должен представлять из себя последовательность чисел, разделённых пробелами, переносом строки или табуляцией. Например:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2 5 1 0 -3 4 7 6 8 12 -18 20&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Если данные файлы некорректны, то данные в массиве могут быть абсолютно любыми.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Размер массива не должен быть больше 1 000 000.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="sortButton">
+      <property name="text">
+       <string>Отсортировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

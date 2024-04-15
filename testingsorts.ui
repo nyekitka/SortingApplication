@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestingSorts</class>
+ <widget class="QWidget" name="TestingSorts">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1510</width>
+    <height>853</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Тестирование на время</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icon_Clock_svg.ico</normaloff>Icon_Clock_svg.ico</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>1501</width>
+     <height>828</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="minimumSize">
+       <size>
+        <width>1005</width>
+        <height>400</height>
+       </size>
+      </property>
+      <column>
+       <property name="text">
+        <string>1000 эл.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>2000 эл.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>3000 эл.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>4000 эл.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>5000 эл.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>6000 эл.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>7000 эл.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>8000 эл.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>9000 эл.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>10000 эл.</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item>
+         <widget class="QLabel" name="sortingsLabel">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Сортировки</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="bubbleSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Пузырьковая сортировка</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="shakerSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Шейкерная сортировка</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="insertionSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка вставками</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="selectionSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка выбором</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="countingSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка подсчётом</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="binInsertSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка двоичными вставками</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="doubleSelectionSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Двусторонняя сортировка выбором</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="treeSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка деревом</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="heapSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Пирамидальная сортировка</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="mergeSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка слиянием</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="quickSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Быстрая сортировка</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="shellSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка Шелла</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="hibbardSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка Шелла (последовательность Хиббарда)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="sedgewickSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка Шелла (последовательность Седжвика)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="prattSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка Шелла (последовательность Пратта)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="fiSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Сортировка Шелла (последовательность Фибоначчи)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="bitonicSortBox">
+          <property name="maximumSize">
+           <size>
+            <width>470</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Битонная сортировка</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="chooseAllBox">
+          <property name="text">
+           <string>Выбрать все</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="firstCountLabel">
+        <property name="maximumSize">
+         <size>
+          <width>470</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Количество элементов в первом тесте</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item>
+         <widget class="QSlider" name="firstCountSlider">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="minimum">
+           <number>100</number>
+          </property>
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+          <property name="value">
+           <number>1000</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="firstCountSpinBox">
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="minimum">
+           <number>100</number>
+          </property>
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+          <property name="value">
+           <number>1000</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="stepLabel">
+        <property name="maximumSize">
+         <size>
+          <width>470</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Шаг тестов</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item>
+         <widget class="QSlider" name="stepSlider">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="minimum">
+           <number>100</number>
+          </property>
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+          <property name="value">
+           <number>1000</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="stepSpinBox">
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="minimum">
+           <number>100</number>
+          </property>
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+          <property name="value">
+           <number>1000</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="startButton">
+        <property name="maximumSize">
+         <size>
+          <width>470</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Старт</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stopButton">
+        <property name="maximumSize">
+         <size>
+          <width>470</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Стоп</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
